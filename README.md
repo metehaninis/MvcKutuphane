@@ -1,6 +1,6 @@
 # Asp.Net Mvc5 ile Kütüphane Yönetim Sistemi
 
-Bu proje bir kütüphanenin vitrin, admin ve kullanıcı olmak üzere 3 temel panelinden oluşuyor. Özellikle admin panelinin dashboard kısmı ile hem tasarımı güçlü bir arayüz hem de crud işlemlerinin ötesinde Entity Framework, Linq sorgular üzerinden Trigger, Procedure gibi SQL yapıları ile somut ve dinamik bir projedir.
+Bu proje bir kütüphanenin vitrin, admin ve kullanıcı olmak üzere 3 temel panelinden oluşuyor. Özellikle admin panelinin dashboard kısmı ile hem tasarımı güçlü bir arayüz hem de crud işlemlerinin ötesinde Entity Framework, Linq sorgular üzerinden Trigger, Procedure gibi SQL yapıları ile somut ve dinamik bir projedir. Hazır css, javascript ve bootstrap den yararlanılmıştır.
 
 ## Vitrin Paneli
 Kitapların listesi, Hakkımızda, İletişim ve Login başlıklarından oluşmaktadır.
