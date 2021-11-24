@@ -1,0 +1,47 @@
+﻿@using MvcKutuphane.Models.Entity
+@using PagedList
+@using PagedList.Mvc
+@model PagedList.IPagedList<TBLUYELER>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+<h2>Üyeler</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>ÜYE ID</th>
+        <th>ÜYE ADI</th>
+        <th>ÜYE SOYADI</th>
+        <th>MAİL</th>
+        <th>KULLANICI ADI</th>
+        <th>ŞİFRE</th>
+        <th>TELEFON</th>
+        <th>OKUL</th>
+        <th>SİL</th>
+        <th>GÜNCELLE</th>
+        <th>KİTAP GEÇMİŞİ</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ID</td>
+            <td>@item.AD</td>
+            <td>@item.SOYAD</td>
+            <td>@item.MAIL</td>
+            <td>@item.KULLANICIADI</td>
+            <td>@item.SIFRE</td>
+            <td>@item.TELEFON</td>
+            <td>@item.OKUL</td>
+            <td><a href="/Uye/UyeSil/@item.ID" class="btn btn-danger">SİL</a></td>
+            <td><a href="/Uye/UyeGetir/@item.ID" class="btn btn-success">GÜNCELLE</a></td>
+            <td><a href="/Uye/UyeKitapGecmis/@item.ID" class="btn btn-success" style="background-color:lightseagreen">KİTAP GEÇMİŞİ</a></td>
+        </tr>
+    }
+</table>
+<!--modelimden gelicek değerleri sayfa içerisinde listele,sayfa adlı değişkenimin değeride her defasında bir urlaction alsın
+    (altta tıklanan 1 2 3) her defasında indexe gönder o url actionda kaçıncı sayfa değeriyse o sayfayı bana aç-->
+@Html.PagedListPager((IPagedList)Model, sayfa => Url.Action("Index", new { sayfa }))
+<a href="/Uye/UyeEkle/" class="btn btn-primary">Yeni Üye Ekle</a>
