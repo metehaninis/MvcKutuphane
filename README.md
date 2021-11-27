@@ -9,7 +9,7 @@ Kitapların listesi, Hakkımızda, İletişim ve Login başlıklarından oluşma
 Hesap oluşturup giriş yaptıktan sonra Profilim, Duyurular, Kitaplarım, kullanıcılar arasında Gelen, Giden ve Yeni mesaj gönderme işlemleri yapılabilmektedir. 
 
 ## Admin Paneli 
-Projenin en kapsamlı kısmıdır. url ile admin giriş paneline ulaştıktan sonra admin kullanıcı adı ve şifresi ile giriş yapan adminin aşağıdaki işlemlere erişimi bulunmaktadır.
+Projenin en kapsamlı kısmıdır. url ile admin giriş paneline ulaştıktan sonra kullanıcı adı ve şifresi ile giriş yapan adminin aşağıdaki işlemlere erişimi bulunmaktadır.
 
 (Ancak burada yetkilendirme bulunmaktadır. Ör: B yetkisine sahip adminlerin Personeller, Kitap alıp verme ve Admin ayarları kısımlarına erişimi kısıtlanmıştır, bu başlıkları göremez.)
 
